@@ -1,0 +1,34 @@
+<div class="home-banner">
+   <div class="row justify-content-center">
+<h1>Cocktails</h1>
+</div>
+  <p>
+    <span id="banner-typed-text"></span>
+  </p>
+</div>
+
+
+
+<div class="container">
+  <div class="row">
+<% @cocktails.each do |cocktail| %>
+    <div class="col-sm-12 col-md-4">
+      <%= render "shared/card", cocktail: cocktail %>
+    </div>
+<% end %>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+       <div class="row justify-content-center">
+    <div class="btn btn-primary" id="bouton">
+<%= link_to "add a new cocktail", new_cocktail_path%>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

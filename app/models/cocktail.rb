@@ -3,4 +3,15 @@ class Cocktail < ApplicationRecord
   has_many :ingredients, through: :doses
   validates :name, presence: true
   validates :name, uniqueness: true
+
+
+  def url
+    if name.downcase === "mojito"
+
+      url = "https://static.750g.com/images/622-auto/b520523117d647dab6b842a36f4cc7f5/mojito-le-vrai.jpg"
+    else
+      url = "https://images-na.ssl-images-amazon.com/images/I/51IJZB8Cv6L.jpg"
+    end
+    url
+  end
 end
