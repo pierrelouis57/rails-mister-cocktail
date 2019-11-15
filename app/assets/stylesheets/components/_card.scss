@@ -8,6 +8,8 @@
   height: 200px;
   width: 100%;
   object-fit: cover;
+  padding: 2px;
+  margin-right: 5px;
 }
 
 .card-trip h2 {
@@ -29,11 +31,16 @@
   justify-content: space-between;
   align-items: flex-end;
   position: relative;
+  color: black;
 }
 
 .card-trip-infos .card-trip-user {
   position: absolute;
-  right: 16px;
+  right: 10px;
   top: -20px;
   width: 40px;
+}
+
+.col-sm-12 {
+  margin-top: 10px;
 }
